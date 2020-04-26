@@ -1,0 +1,17 @@
+{
+    "name": "todomvc-tests",
+    "version": "1.0.0",
+    "description": "Learning cypress.io",
+    "main": "index.js",
+    "scripts": {
+        "cypress": "cypress open",
+        "test": "cypress run"
+    },
+    "keywords": [],
+    "author": "Aleksandar Julovski",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "cypress": "^4.4.0"
+    }
+}

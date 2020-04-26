@@ -1,0 +1,23 @@
+{
+	"name": "cypress-framework-2",
+	"version": "1.0.0",
+	"description": "cypress framework page object model",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open",
+		"cy:run": "cypress run",
+		"cy:update-snapshots": "cypress run --env updateSnapshots=true"
+	},
+	"keywords": [
+		"pom",
+		"cypress"
+	],
+	"author": "Aleksandar Julovski",
+	"license": "ISC",
+	"dependencies": {
+		"@types/cypress-image-snapshot": "^3.1.2",
+		"cypress": "^4.4.1",
+		"cypress-image-snapshot": "^3.1.1",
+		"prettier": "^2.0.5"
+	}
+}

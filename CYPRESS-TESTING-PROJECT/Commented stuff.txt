@@ -1,0 +1,51 @@
+IT
+
+    it('', () => {
+
+    })
+
+
+
+
+/// <reference types="Cypress" />
+
+describe('My first simple test with Cypress', () => {
+    it('True should be true', () => {
+        expect(true).to.equal(true)
+    })
+
+    it('5 should be 5', () => {
+        expect(5).to.equal(5)
+    })
+})
+
+describe('Another test suite', () => {
+    it("False should be false", () => {
+        expect(false).to.equal(false)
+    })
+})
+
+
+describe('Browser action', () => {
+    it('Should load correct url', () => {
+        cy.visit('http://www.example.com', { timeout: 10000 })
+    })
+
+    it('Should check correct url', () => {
+        cy.url().should('include', 'example')
+    })
+
+    it('Should wait for 3 seconds', () => {
+        cy.wait(3000)
+    })
+
+    it('Should demonstrate pausing of the execution', () => {
+        cy.pause()
+    })
+
+    it('Should check for correct element visibility on the webpage', () => {
+        cy.get('h1').should('be.visible')
+    })
+})
+
+npx cypress run --spec="cypress/integration/examples/login.spec.js"
